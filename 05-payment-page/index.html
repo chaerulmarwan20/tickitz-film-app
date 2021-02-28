@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Payment Page</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/Tickitz 1.png" alt="Logo Tickitz">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav d-flex mr-auto">
+					<form class="d-block d-lg-none form-inline my-3 form-search">
+						<input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+					</form>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Movies <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cinemas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Buy Ticket</a>
+					</li>
+					<li class="nav-item dropdown d-block d-lg-none">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Location
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Jakarta</a>
+							<a class="dropdown-item" href="#">Bandung</a>
+							<a class="dropdown-item" href="#">Surabaya</a>
+						</div>
+					</li>
+					<div class="row d-block d-lg-none mt-4">
+						<div class="col d-flex align-items-center justify-content-center">
+							<p class="copyright-nav">© 2021 Tickitz. All Rights Reserved.</p>
+						</div>
+					</div>
+				</ul>
+				<div class="dropdown d-none d-lg-block">
+					<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Location
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Jakarta</a>
+						<a class="dropdown-item" href="#">Bandung</a>
+						<a class="dropdown-item" href="#">Surabaya</a>
+					</div>
+				</div>
+				<img src="img/ic-search.png" class="ic-search d-none d-lg-block mx-5" alt="Search">
+				<img src="img/Ellipse 11.png" class="rounded-circle d-none d-lg-block img-user" alt="User">
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+
+	<nav class="navbar pt-4 fixed-top pl-1 total-payment d-flex d-md-none justify-content-between">
+		<div class="container">
+			<h2>Total Payment</h2>
+			<p>$30.00</p>
+		</div>
+	</nav>
+
+	<section class="payment-detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-xl-8">
+					<h1 class="d-none d-md-block">Payment Info</h1>
+					<div class="card d-none d-md-block payment-info p-5 mt-4">
+						<div class="container">
+							<div class="row justify-content-between align-items-center">
+								<h2>Date & time</h2>
+								<p>Tuesday, 07 July 2020 at 02:00pm</p>
+								<hr>
+							</div>
+							<div class="row justify-content-between align-items-center">
+								<h2>Movie title</h2>
+								<p>Spider-Man: Homecoming</p>
+								<hr>
+							</div>
+							<div class="row justify-content-between align-items-center">
+								<h2>Cinema name</h2>
+								<p>CineOne21 Cinema</p>
+								<hr>
+							</div>
+							<div class="row justify-content-between align-items-center">
+								<h2>Number of tickets</h2>
+								<p>3 pieces</p>
+								<hr>
+							</div>
+							<div class="row justify-content-between align-items-center">
+								<h2>Total payment</h2>
+								<p>$30,00</p>
+							</div>
+						</div>
+					</div>
+					<h1 class="mt-5 d-none d-md-block">Choose a Payment Method</h1>
+					<div class="card d-none d-md-block payment-method mt-4 pt-5 pb-4">
+						<div class="row justify-content-center">
+							<div class="d-flex">
+								<a class="btn btn-payment">
+									<img src="img/logos_google-pay.png" width="74">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/logos_visa.png" width="80">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/Logo GoPay (SVG-240p) - FileVector69 1.png" width="106">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/logos_paypal.png" width="31">
+								</a>
+							</div>
+							<div class="d-flex">
+								<a class="btn btn-payment">
+									<img src="img/Logo DANA (PNG-240p) - FileVector69 1.png" width="108">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/Bank BCA Logo (SVG-240p) - FileVector69 1.png" width="85">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.png" width="45">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/ovo.png" width="92">
+								</a>
+							</div>
+						</div>
+						<div class="row justify-content-center mt-3 mb-4">
+							<hr>
+							<p class="or">or</p>
+							<hr>
+						</div>
+						<div class="row justify-content-center">
+							<p class="pay">Pay via cash. <span>See how it work</span></p>
+						</div>
+					</div>
+					<h1 class="d-md-none" style="margin-top: 80px;">Payment Method</h1>
+					<div class="card d-md-none payment-method mt-4 pt-5 pb-4">
+						<div class="row justify-content-center">
+							<div class="d-flex">
+								<a class="btn btn-payment">
+									<img src="img/logos_google-pay.png" width="35">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/logos_visa.png" width="38">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/Logo GoPay (SVG-240p) - FileVector69 1.png" width="50">
+								</a>
+							</div>
+							<div class="d-flex">
+								<a class="btn btn-payment">
+									<img src="img/logos_paypal.png" width="15">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/ovo.png" width="43">
+								</a>
+								<a class="btn btn-payment">
+									<img src="img/Logo DANA (PNG-240p) - FileVector69 1.png" width="51">
+								</a>
+							</div>
+						</div>
+						<div class="row justify-content-center ml-1 ml-sm-0 mt-2 mb-2">
+							<hr class="hr-mobile">
+							<p class="or-mobile">or</p>
+							<hr class="hr-mobile">
+						</div>
+						<div class="row justify-content-center">
+							<p class="pay">Pay via cash. <span>See how it work</span></p>
+						</div>
+					</div>
+					<div class="row d-none d-md-flex justify-content-between pt-5 ml-auto">
+						<button class="btn btn-previous">Previous step</button>
+						<button class="btn btn-order">Pay your order</button>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xl-4 mt-5 mt-xl-0">
+					<h1 style="position: relative; z-index: -1;">Personal Info</h1>
+					<div class="card personal-info p-4 mt-4">
+						<form class="mt-4">
+							<div class="form-group">
+								<label for="full_name">Full Name</label>
+								<input type="text" class="form-control" id="full_name" placeholder="Jonas El Rodriguez">
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="text" class="form-control" id="email" placeholder="jonasrodri123@gmail.com">
+							</div>
+							<div class="form-group">
+								<label for="phone_number">Phone Number</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">+62</div>
+									</div>
+									<input type="text" class="form-control phone-number" placeholder="81445687121">
+								</div>
+							</div>
+						</form>
+						<div class="custom-alert d-flex align-items-center">
+							<img src="img/warning.png" alt="Alert Warning" class="alert-img">
+							<span class="ml-4">Fill your data correctly.</span>
+						</div>
+					</div>
+					<div class="row mx-auto d-md-none justify-content-center mt-5">
+						<button class="btn btn-order-mobile">Pay your order</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="pt-5">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-md-0">
+					<img src="img/Tickitz 2.png" class="logo" alt="Logo Tickitz">
+					<p>
+						Stop waiting in line. Buy tickets
+						<br>
+						conveniently, watch movies quietly.
+					</p>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-12 mb-4 mb-md-0">
+					<nav class="nav explore d-none d-md-block flex-column">
+						<p class="nav-link mb-3">Explore</p>
+						<a class="nav-link" href="#">Cinemas</a>
+						<a class="nav-link" href="#">Movies List</a>
+						<a class="nav-link" href="#">My Ticket</a>
+						<a class="nav-link" href="#">Notification</a>
+					</nav>
+					<p class="explore d-md-none mb-2">Explore</p>
+					<nav class="nav explore-2 d-md-none flex-row">
+						<a class="nav-link" href="#">Cinemas</a>
+						<a class="nav-link" href="#">Movies List</a>
+						<a class="nav-link" href="#">Notification</a>
+						<a class="nav-link" href="#">My Ticket</a>
+					</nav>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+					<nav class="nav sponsor d-none d-md-block flex-column">
+						<p class="nav-link mb-3">Our Sponsor</p>
+						<a class="nav-link" href="#">
+							<img src="img/ebv.id.png" alt="Ebv">
+						</a>
+						<a class="nav-link" href="#">
+							<img src="img/CineOne21 2.png" alt="CineOne">
+						</a>
+						<a class="nav-link" href="#">
+							<img src="img/hiflix.png" alt="Hiflix">
+						</a>
+					</nav>
+					<p class="our-sponsor d-md-none mb-2">Our Sponsor</p>
+					<nav class="nav sponsor-2 d-md-none flex-row">
+						<div class="d-flex align-items-center">
+							<a class="nav-link" href="#">
+								<img src="img/ebv.id 2.png" alt="Ebv" class="row-ebv">
+							</a>
+							<a class="nav-link" href="#">
+								<img src="img/CineOne21 3.png" alt="CineOne" class="row-cineone">
+							</a>
+							<a class="nav-link" href="#">
+								<img src="img/hiflix 2.png" alt="Hiflix" class="row-hiflix">
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-12 mb-4 mb-md-0">
+					<nav class="nav follow-us d-none d-md-block flex-column">
+						<p class="nav-link mb-3">Follow Us</p>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-facebook.png" class="facebook">Tickitz Cinema id
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-instagram.png" class="instagram">tickitz.id
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-twitter.png" class="twitter">tickitz.id
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-youtube.png" class="youtube">Tickitz Cinema id
+						</a>
+					</nav>
+					<p class="follow-us d-md-none mb-2">Follow Us</p>
+					<nav class="nav follow-us-2 d-md-none flex-row">
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-facebook.png" class="facebook">
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-instagram.png" class="instagram">
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-twitter.png" class="twitter">
+						</a>
+						<a class="nav-link d-flex align-items-center" href="#">
+							<img src="img/ic-youtube.png" class="youtube">
+						</a>
+					</nav>
+				</div>
+			</div>
+			<div class="row d-none d-md-block pb-4">
+				<div class="col d-flex align-items-center justify-content-center">
+					<p class="copyright">© 2021 Tickitz. All Rights Reserved.</p>
+				</div>
+			</div>
+			<div class="row d-md-none pb-4" style="margin-top: -40px;">
+				<div class="col d-flex align-items-center justify-content-start">
+					<p class="copyright">© 2021 Tickitz. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+
+</html>
