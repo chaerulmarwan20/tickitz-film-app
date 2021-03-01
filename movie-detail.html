@@ -9,26 +9,26 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="gijgo/css/gijgo.min.css">
+	<link rel="stylesheet" href="assets/gijgo/css/gijgo.min.css">
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 	<!-- My CSS -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/movie-detail.css">
 
 	<title>Movie Detail</title>
 </head>
 
 <body>
-	<div class="overlay d-lg-none d-none"></div>
+	<div class="overlay d-none"></div>
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">
-				<img src="img/Tickitz 1.png" alt="Logo Tickitz">
+				<img src="assets/img/movie-detail/Tickitz 1.png" alt="Logo Tickitz">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
 					</li>
 					<li class="nav-item dropdown d-block d-lg-none">
 						<a class="nav-link mt-4 mb-2 my-lg-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Location <img src="img/ic_dropdown.png" width="18px">
+							Location <img src="assets/img/movie-detail/ic_dropdown.png" width="18px">
 						</a>
 						<div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Jakarta</a>
@@ -65,7 +65,7 @@
 				</ul>
 				<div class="dropdown d-none d-lg-block">
 					<a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Location <img src="img/ic_dropdown.png" width="18px">
+						Location <img src="assets/img/movie-detail/ic_dropdown.png" width="18px">
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 						<a class="dropdown-item" href="#">Jakarta</a>
@@ -73,8 +73,8 @@
 						<a class="dropdown-item" href="#">Surabaya</a>
 					</div>
 				</div>
-				<img src="img/ic-search.png" class="ic-search d-none d-lg-block mx-5" alt="Search">
-				<img src="img/Ellipse 11.png" class="rounded-circle d-none d-lg-block img-user" alt="User">
+				<img src="assets/img/movie-detail/ic-search.png" class="ic-search d-none d-lg-block mx-5" alt="Search">
+				<img src="assets/img/movie-detail/Ellipse 11.png" class="rounded-circle d-none d-lg-block img-user" alt="User">
 			</div>
 		</div>
 	</nav>
@@ -85,7 +85,7 @@
 			<div class="row mt-5">
 				<div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start">
 					<div class="card movie-header">
-						<img src="img/movie-header.png" alt="Movie Header">
+						<img src="assets/img/movie-detail/movie-header.png" alt="Movie Header">
 					</div>
 				</div>
 				<div class="col-12 movie col-lg-7 mt-5 mt-lg-0 pl-0">
@@ -164,13 +164,14 @@
 							<button class="btn location" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<p class="my-auto text-left">
 									Purwokerto
-									<img src="img/Forward.png" width="18" class="ic-forward">
+									<img src="assets/img/movie-detail/Forward.png" width="18" class="ic-forward">
 								</p>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="#">Jakarta</a>
 								<a class="dropdown-item" href="#">Bandung</a>
 								<a class="dropdown-item" href="#">Surabaya</a>
+								<a class="dropdown-item" href="#">Purwokerto</a>
 							</div>
 						</div>
 					</form>
@@ -182,13 +183,14 @@
 							<button class="btn location" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<p class="my-auto text-left">
 									Set a city
-									<img src="img/Forward.png" width="18" class="ic-forward-mobile">
+									<img src="assets/img/movie-detail/Forward.png" width="18" class="ic-forward-mobile">
 								</p>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="#">Jakarta</a>
 								<a class="dropdown-item" href="#">Bandung</a>
 								<a class="dropdown-item" href="#">Surabaya</a>
+								<a class="dropdown-item" href="#">Purwokerto</a>
 							</div>
 						</div>
 					</form>
@@ -204,7 +206,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/ebv.id-cinema.png" alt="Ebv" class="ebv">
+								<img src="assets/img/movie-detail/ebv.id-cinema.png" alt="Ebv" class="ebv">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>ebv.id</h2>
@@ -243,7 +245,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/CineOne21-cinema.png" alt="Cineone" class="cineone">
+								<img src="assets/img/movie-detail/CineOne21-cinema.png" alt="Cineone" class="cineone">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>CineOne21</h2>
@@ -282,7 +284,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/hiflix-cinema.png" alt="Cineone" class="hiflix">
+								<img src="assets/img/movie-detail/hiflix-cinema.png" alt="Cineone" class="hiflix">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>hiflix Cinema</h2>
@@ -321,7 +323,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/ebv.id-cinema.png" alt="Cineone" class="ebv">
+								<img src="assets/img/movie-detail/ebv.id-cinema.png" alt="Cineone" class="ebv">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>ebv.id</h2>
@@ -360,7 +362,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/CineOne21-cinema.png" alt="Cineone" class="cineone">
+								<img src="assets/img/movie-detail/CineOne21-cinema.png" alt="Cineone" class="cineone">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>CineOne21</h2>
@@ -399,7 +401,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-3">
 							<div class="col d-flex justify-content-center align-items-center">
-								<img src="img/hiflix-cinema.png" alt="Cineone" class="hiflix">
+								<img src="assets/img/movie-detail/hiflix-cinema.png" alt="Cineone" class="hiflix">
 							</div>
 							<div class="col d-flex flex-column pl-1">
 								<h2>hiflix Cinema</h2>
@@ -440,7 +442,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-4">
 							<div class="col d-flex flex-column justify-content-center align-items-center">
-								<img src="img/ebv.id-cinema.png" alt="Ebv" class="ebv-mobile mb-3">
+								<img src="assets/img/movie-detail/ebv.id-cinema.png" alt="Ebv" class="ebv-mobile mb-3">
 								<p class="text-center">Whatever street No.12, South <br> Purwokerto</p>
 							</div>
 						</div>
@@ -477,7 +479,7 @@
 					<div class="card cinema-card">
 						<div class="row pt-4">
 							<div class="col d-flex flex-column justify-content-center align-items-center">
-								<img src="img/ebv.id-cinema.png" alt="Ebv" class="ebv-mobile mb-3">
+								<img src="assets/img/movie-detail/ebv.id-cinema.png" alt="Ebv" class="ebv-mobile mb-3">
 								<p class="text-center">Whatever street No.12, South <br> Purwokerto</p>
 							</div>
 						</div>
@@ -531,7 +533,7 @@
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-md-0">
-					<img src="img/Tickitz 2.png" class="logo" alt="Logo Tickitz">
+					<img src="assets/img/movie-detail/Tickitz 2.png" class="logo" alt="Logo Tickitz">
 					<p>
 						Stop waiting in line. Buy tickets
 						<br>
@@ -558,26 +560,26 @@
 					<nav class="nav sponsor d-none d-md-block flex-column">
 						<p class="nav-link mb-3">Our Sponsor</p>
 						<a class="nav-link" href="#">
-							<img src="img/ebv.id.png" alt="Ebv">
+							<img src="assets/img/movie-detail/ebv.id.png" alt="Ebv">
 						</a>
 						<a class="nav-link" href="#">
-							<img src="img/CineOne21 2.png" alt="CineOne">
+							<img src="assets/img/movie-detail/CineOne21 2.png" alt="CineOne">
 						</a>
 						<a class="nav-link" href="#">
-							<img src="img/hiflix.png" alt="Hiflix">
+							<img src="assets/img/movie-detail/hiflix.png" alt="Hiflix">
 						</a>
 					</nav>
 					<p class="our-sponsor d-md-none mb-2">Our Sponsor</p>
 					<nav class="nav sponsor-mobile d-md-none flex-row">
 						<div class="d-flex align-items-center">
 							<a class="nav-link" href="#">
-								<img src="img/ebv.id 2.png" alt="Ebv" class="row-ebv">
+								<img src="assets/img/movie-detail/ebv.id 2.png" alt="Ebv" class="row-ebv">
 							</a>
 							<a class="nav-link" href="#">
-								<img src="img/CineOne21 3.png" alt="CineOne" class="row-cineone">
+								<img src="assets/img/movie-detail/CineOne21 3.png" alt="CineOne" class="row-cineone">
 							</a>
 							<a class="nav-link" href="#">
-								<img src="img/hiflix 2.png" alt="Hiflix" class="row-hiflix">
+								<img src="assets/img/movie-detail/hiflix 2.png" alt="Hiflix" class="row-hiflix">
 							</a>
 						</div>
 					</nav>
@@ -586,31 +588,31 @@
 					<nav class="nav follow-us d-none d-md-block flex-column">
 						<p class="nav-link mb-3">Follow Us</p>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-facebook.png" class="facebook">Tickitz Cinema id
+							<img src="assets/img/movie-detail/ic-facebook.png" class="facebook">Tickitz Cinema id
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-instagram.png" class="instagram">tickitz.id
+							<img src="assets/img/movie-detail/ic-instagram.png" class="instagram">tickitz.id
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-twitter.png" class="twitter">tickitz.id
+							<img src="assets/img/movie-detail/ic-twitter.png" class="twitter">tickitz.id
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-youtube.png" class="youtube">Tickitz Cinema id
+							<img src="assets/img/movie-detail/ic-youtube.png" class="youtube">Tickitz Cinema id
 						</a>
 					</nav>
 					<p class="follow-us d-md-none mb-2">Follow Us</p>
 					<nav class="nav follow-us-mobile d-md-none flex-row">
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-facebook.png" class="facebook">
+							<img src="assets/img/movie-detail/ic-facebook.png" class="facebook">
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-instagram.png" class="instagram">
+							<img src="assets/img/movie-detail/ic-instagram.png" class="instagram">
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-twitter.png" class="twitter">
+							<img src="assets/img/movie-detail/ic-twitter.png" class="twitter">
 						</a>
 						<a class="nav-link d-flex align-items-center" href="#">
-							<img src="img/ic-youtube.png" class="youtube">
+							<img src="assets/img/movie-detail/ic-youtube.png" class="youtube">
 						</a>
 					</nav>
 				</div>
@@ -632,19 +634,19 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-	<script src="gijgo/js/gijgo.min.js"></script>
+	<script src="assets/gijgo/js/gijgo.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('.datepicker').datepicker({
 				uiLibrary: 'bootstrap4',
 				icons: {
-					rightIcon: '<img src="img/Forward.png" width="18">',
+					rightIcon: '<img src="assets/img/movie-detail/Forward.png" width="18">',
 				}
 			});
 			$('.datepicker-mobile').datepicker({
 				uiLibrary: 'bootstrap4',
 				icons: {
-					rightIcon: '<img src="img/Forward.png" width="18">',
+					rightIcon: '<img src="assets/img/movie-detail/Forward.png" width="18">',
 				}
 			});
 		});
