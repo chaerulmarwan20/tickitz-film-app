@@ -42,7 +42,9 @@ body {
 	margin-right: 46px;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover,
+nav .nav-link:hover,
+.dropdown a.dropdown-toggle:hover {
 	color: #757474;
 }
 
@@ -50,10 +52,6 @@ nav .nav-link {
 	font-weight: 600;
 	color: #414141;
 	white-space: nowrap;
-}
-
-nav .nav-link:hover {
-	color: #757474;
 }
 
 .navbar-nav .form-search img {
@@ -93,10 +91,6 @@ nav .nav-link:hover {
 	font-weight: 600;
 	color: #414141;
 	text-decoration: none;
-}
-
-.dropdown a.dropdown-toggle:hover {
-	color: #757474;
 }
 
 .ic-search {
@@ -395,7 +389,7 @@ header h1 {
 	color: #5F2EEA;
 }
 
-.jumbotron .join-now-one input {
+.jumbotron .join-now input {
 	display: block;
 	width: 306px;
 	height: 53px;
@@ -411,14 +405,14 @@ header h1 {
 	margin-top: 48px;
 }
 
-.jumbotron .join-now-one input::-webkit-input-placeholder {
+.jumbotron .join-now input::-webkit-input-placeholder {
 	font-size: 14px;
 	font-weight: 600;
 	color: #A0A3BD;
 	letter-spacing: 0.75px;
 }
 
-.jumbotron .join-now-two input {
+.jumbotron .join-now-mobile input {
 	display: none;
 	width: 263px;
 	height: 46px;
@@ -434,14 +428,14 @@ header h1 {
 	transition: .5s ease;
 }
 
-.jumbotron .join-now-two input::-webkit-input-placeholder {
+.jumbotron .join-now-mobile input::-webkit-input-placeholder {
 	font-size: 12px;
 	font-weight: 600;
 	color: #A0A3BD;
 	letter-spacing: 0.75px;
 }
 
-.jumbotron .btn-join-now-one {
+.jumbotron .btn-join-now {
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	margin-left: 16px;
@@ -458,13 +452,13 @@ header h1 {
 	border: 1px solid transparent;
 }
 
-.jumbotron .btn-join-now-one:hover {
+.jumbotron .btn-join-now:hover {
 	border: 1px solid #5F2EEA;
 	background-color: #FFF;
 	color: #5F2EEA;
 }
 
-.jumbotron .btn-join-now-two {
+.jumbotron .btn-join-now-mobile {
 	display: none;
 	font-family: 'Mulish', sans-serif;
 	margin-top: 16px;
@@ -482,13 +476,13 @@ header h1 {
 	border: 1px solid transparent;
 }
 
-.jumbotron .btn-join-now-two:hover {
+.jumbotron .btn-join-now-mobile:hover {
 	border: 1px solid #5F2EEA;
 	background-color: #FFF;
 	color: #5F2EEA;
 }
 
-.jumbotron p.text-one {
+.jumbotron p.text-join-now {
 	display: block;
 	margin-top: 40px;
 	font-weight: 400;
@@ -499,7 +493,7 @@ header h1 {
 	color: #6E7191;
 }
 
-.jumbotron p.text-two {
+.jumbotron p.text-join-now-mobile {
 	display: none;
 	margin-top: 40px;
 	font-weight: 400;
@@ -569,9 +563,9 @@ footer nav a:hover {
 	color: #000;
 }
 
-footer nav.explore-2,
-footer nav.sponsor-2,
-footer nav.follow-us-2 {
+footer nav.explore-mobile,
+footer nav.sponsor-mobile,
+footer nav.follow-us-mobile {
 	margin-left: -15px;
 }
 
@@ -590,17 +584,17 @@ footer nav.sponsor a:last-of-type img {
 	height: 26px;
 }
 
-footer nav.sponsor-2 img.row-ebv {
+footer nav.sponsor-mobile img.row-ebv {
 	width: 81px;
 	height: 30px;
 }
 
-footer nav.sponsor-2 img.row-cineone {
+footer nav.sponsor-mobile img.row-cineone {
 	width: 106px;
 	height: 17px;
 }
 
-footer nav.sponsor-2 img.row-hiflix {
+footer nav.sponsor-mobile img.row-hiflix {
 	width: 77px;
 	height: 25px;
 }
@@ -613,10 +607,10 @@ footer nav.follow-us .facebook,
 footer nav.follow-us .instagram,
 footer nav.follow-us .twitter,
 footer nav.follow-us .youtube,
-footer nav.follow-us-2 .facebook,
-footer nav.follow-us-2 .instagram,
-footer nav.follow-us-2 .twitter,
-footer nav.follow-us-2 .youtube {
+footer nav.follow-us-mobile .facebook,
+footer nav.follow-us-mobile .instagram,
+footer nav.follow-us-mobile .twitter,
+footer nav.follow-us-mobile .youtube {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
@@ -638,10 +632,8 @@ footer nav.follow-us-2 .youtube {
 }
 
 @media (max-width: 1316px) {
-	.now-showing-movie {
-		overflow: auto;
-	}
 
+	.now-showing-movie,
 	.container-upcoming-movie {
 		overflow: auto;
 	}
@@ -674,7 +666,7 @@ footer nav.follow-us-2 .youtube {
 	}
 
 	.navbar-nav .nav-item.dropdown .nav-link {
-		margin-bottom: 0;
+		margin-bottom: 0px;
 	}
 
 	.navbar-nav div {
@@ -754,11 +746,7 @@ footer nav.follow-us-2 .youtube {
 		height: 185px;
 	}
 
-	.container-upcoming-movie .card {
-		width: 152px;
-		height: 330px;
-	}
-
+	.container-upcoming-movie .card,
 	.card-upcoming-movie {
 		width: 152px;
 		height: 330px;
@@ -815,28 +803,22 @@ footer nav.follow-us-2 .youtube {
 		font-size: 32px;
 	}
 
-	.jumbotron .join-now-one input {
+	.jumbotron .join-now input,
+	.jumbotron .btn-join-now {
 		display: none;
 	}
 
-	.jumbotron .btn-join-now-one {
-		display: none;
-	}
-
-	.jumbotron .join-now-two input {
+	.jumbotron .join-now-mobile input,
+	.jumbotron .btn-join-now-mobile {
 		display: block;
 	}
 
-	.jumbotron .btn-join-now-two {
-		display: block;
-	}
-
-	.jumbotron p.text-one {
+	.jumbotron p.text-join-now {
 		font-size: 12px;
 		display: none;
 	}
 
-	.jumbotron p.text-two {
+	.jumbotron p.text-join-now-mobile {
 		font-size: 12px;
 		display: block;
 	}

@@ -210,6 +210,7 @@ main aside p.or::after {
 	font-weight: 600;
 	font-size: 18px;
 	border: 1px solid transparent;
+	cursor: pointer;
 }
 
 .btn-google {
@@ -218,11 +219,6 @@ main aside p.or::after {
 
 .btn-facebook {
 	margin-left: 18px;
-}
-
-.btn-google:hover,
-.btn-facebook:hover {
-	cursor: pointer;
 }
 
 .btn-google::before {
@@ -263,7 +259,8 @@ main aside p.or::after {
 		padding-bottom: 88px;
 	}
 
-	main section {
+	main section,
+	main aside p {
 		display: none;
 	}
 
@@ -282,21 +279,13 @@ main aside p.or::after {
 		margin-bottom: 39px;
 	}
 
-	main aside p {
-		display: none;
-	}
-
-	main aside p.forgot-password {
-		display: block;
-		font-family: 'Mulish', sans-serif;
-		font-weight: 600;
-	}
-
+	main aside p.forgot-password,
 	main aside p.forgot-password a {
 		font-family: 'Mulish', sans-serif;
 		font-weight: 600;
 	}
 
+	main aside p.forgot-password,
 	main aside p.or {
 		display: block;
 	}
@@ -338,10 +327,7 @@ main aside p.or::after {
 		margin-left: 16px;
 	}
 
-	.btn-google::before {
-		display: none;
-	}
-
+	.btn-google::before,
 	.btn-facebook::before {
 		display: none;
 	}

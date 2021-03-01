@@ -47,7 +47,9 @@ nav.navbar {
 	margin-right: 46px;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover,
+nav .nav-link:hover,
+.dropdown a.dropdown-toggle:hover {
 	color: #757474;
 }
 
@@ -55,10 +57,6 @@ nav .nav-link {
 	font-weight: 600;
 	color: #414141;
 	white-space: nowrap;
-}
-
-nav .nav-link:hover {
-	color: #757474;
 }
 
 .navbar-nav .form-search img {
@@ -98,10 +96,6 @@ nav .nav-link:hover {
 	font-weight: 600;
 	color: #414141;
 	text-decoration: none;
-}
-
-.dropdown a.dropdown-toggle:hover {
-	color: #757474;
 }
 
 .ic-search {
@@ -411,48 +405,33 @@ nav .nav-link:hover {
 	color: #4E4B66;
 }
 
-.seat .availability p:nth-of-type(1)::before {
-	content: '';
-	display: block;
-	width: 25px;
-	height: 25px;
-	background-color: #D6D8E7;
-	border-radius: 8px;
-	float: left;
-	transform: translateX(-15px);
-}
-
-.seat .availability p:nth-of-type(2)::before {
-	content: '';
-	display: block;
-	width: 25px;
-	height: 25px;
-	background-color: #5F2EEA;
-	border-radius: 8px;
-	float: left;
-	transform: translateX(-15px);
-}
-
-.seat .availability p:nth-of-type(3)::before {
-	content: '';
-	display: block;
-	width: 25px;
-	height: 25px;
-	background-color: #F589D7;
-	border-radius: 8px;
-	float: left;
-	transform: translateX(-15px);
-}
-
+.seat .availability p:nth-of-type(1)::before,
+.seat .availability p:nth-of-type(2)::before,
+.seat .availability p:nth-of-type(3)::before,
 .seat .availability p:nth-of-type(4)::before {
 	content: '';
 	display: block;
 	width: 25px;
 	height: 25px;
-	background-color: #6E7191;
 	border-radius: 8px;
 	float: left;
 	transform: translateX(-15px);
+}
+
+.seat .availability p:nth-of-type(1)::before {
+	background-color: #D6D8E7;
+}
+
+.seat .availability p:nth-of-type(2)::before {
+	background-color: #5F2EEA;
+}
+
+.seat .availability p:nth-of-type(3)::before {
+	background-color: #F589D7;
+}
+
+.seat .availability p:nth-of-type(4)::before {
+	background-color: #6E7191;
 }
 
 /* Footer */
@@ -518,9 +497,9 @@ footer nav a:hover {
 	color: #000;
 }
 
-footer nav.explore-2,
-footer nav.sponsor-2,
-footer nav.follow-us-2 {
+footer nav.explore-mobile,
+footer nav.sponsor-mobile,
+footer nav.follow-us-mobile {
 	margin-left: -15px;
 }
 
@@ -539,17 +518,17 @@ footer nav.sponsor a:last-of-type img {
 	height: 26px;
 }
 
-footer nav.sponsor-2 img.row-ebv {
+footer nav.sponsor-mobile img.row-ebv {
 	width: 81px;
 	height: 30px;
 }
 
-footer nav.sponsor-2 img.row-cineone {
+footer nav.sponsor-mobile img.row-cineone {
 	width: 106px;
 	height: 17px;
 }
 
-footer nav.sponsor-2 img.row-hiflix {
+footer nav.sponsor-mobile img.row-hiflix {
 	width: 77px;
 	height: 25px;
 }
@@ -562,10 +541,10 @@ footer nav.follow-us .facebook,
 footer nav.follow-us .instagram,
 footer nav.follow-us .twitter,
 footer nav.follow-us .youtube,
-footer nav.follow-us-2 .facebook,
-footer nav.follow-us-2 .instagram,
-footer nav.follow-us-2 .twitter,
-footer nav.follow-us-2 .youtube {
+footer nav.follow-us-mobile .facebook,
+footer nav.follow-us-mobile .instagram,
+footer nav.follow-us-mobile .twitter,
+footer nav.follow-us-mobile .youtube {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
@@ -608,7 +587,7 @@ footer nav.follow-us-2 .youtube {
 	}
 
 	.navbar-nav .nav-item.dropdown .nav-link {
-		margin-bottom: 0;
+		margin-bottom: 0px;
 	}
 
 	.navbar-nav div {
@@ -748,31 +727,29 @@ footer nav.follow-us-2 .youtube {
 		color: #4E4B66;
 	}
 
-	.seat-mobile .grey {
+	.seat-mobile .grey,
+	.seat-mobile .blue,
+	.seat-mobile .pink,
+	.seat-mobile .black {
 		width: 20px;
 		height: 20px;
 		border-radius: 4px;
 		background-color: #D6D8E7;
 	}
 
+	.seat-mobile .grey {
+		background-color: #D6D8E7;
+	}
+
 	.seat-mobile .blue {
-		width: 20px;
-		height: 20px;
-		border-radius: 4px;
 		background-color: #5F2EEA;
 	}
 
 	.seat-mobile .pink {
-		width: 20px;
-		height: 20px;
-		border-radius: 4px;
 		background-color: #F589D7;
 	}
 
 	.seat-mobile .black {
-		width: 20px;
-		height: 20px;
-		border-radius: 4px;
 		background-color: #6E7191;
 	}
 
@@ -782,15 +759,17 @@ footer nav.follow-us-2 .youtube {
 		box-shadow: 0px 8px 24px rgba(17, 17, 17, 0.08);
 	}
 
-	.movie-mobile .choosed h2 {
+	.movie-mobile .choosed h2,
+	.movie-mobile .choosed p {
 		font-weight: 600;
 		font-size: 16px;
+	}
+
+	.movie-mobile .choosed h2 {
 		color: #4E4B66;
 	}
 
 	.movie-mobile .choosed p {
-		font-weight: 600;
-		font-size: 16px;
 		color: #000;
 	}
 

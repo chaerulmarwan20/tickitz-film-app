@@ -47,7 +47,9 @@ nav.navbar {
 	margin-right: 46px;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover,
+nav .nav-link:hover,
+.dropdown a.dropdown-toggle:hover {
 	color: #757474;
 }
 
@@ -55,10 +57,6 @@ nav .nav-link {
 	font-weight: 600;
 	color: #414141;
 	white-space: nowrap;
-}
-
-nav .nav-link:hover {
-	color: #757474;
 }
 
 .navbar-nav .form-search img {
@@ -98,10 +96,6 @@ nav .nav-link:hover {
 	font-weight: 600;
 	color: #414141;
 	text-decoration: none;
-}
-
-.dropdown a.dropdown-toggle:hover {
-	color: #757474;
 }
 
 .ic-search {
@@ -157,8 +151,6 @@ nav.total-payment {
 }
 
 .payment-info {
-	/* width: 645px; */
-	/* height: 413px; */
 	border-radius: 6px;
 	background-color: #FFF;
 	border: 0;
@@ -189,7 +181,6 @@ nav.total-payment {
 }
 
 .payment-detail .personal-info {
-	/* width: 469px; */
 	height: 548px;
 	border-radius: 6px;
 	background-color: #FFF;
@@ -451,9 +442,9 @@ footer nav a:hover {
 	color: #000;
 }
 
-footer nav.explore-2,
-footer nav.sponsor-2,
-footer nav.follow-us-2 {
+footer nav.explore-mobile,
+footer nav.sponsor-mobile,
+footer nav.follow-us-mobile {
 	margin-left: -15px;
 }
 
@@ -472,17 +463,17 @@ footer nav.sponsor a:last-of-type img {
 	height: 26px;
 }
 
-footer nav.sponsor-2 img.row-ebv {
+footer nav.sponsor-mobile img.row-ebv {
 	width: 81px;
 	height: 30px;
 }
 
-footer nav.sponsor-2 img.row-cineone {
+footer nav.sponsor-mobile img.row-cineone {
 	width: 106px;
 	height: 17px;
 }
 
-footer nav.sponsor-2 img.row-hiflix {
+footer nav.sponsor-mobile img.row-hiflix {
 	width: 77px;
 	height: 25px;
 }
@@ -495,10 +486,10 @@ footer nav.follow-us .facebook,
 footer nav.follow-us .instagram,
 footer nav.follow-us .twitter,
 footer nav.follow-us .youtube,
-footer nav.follow-us-2 .facebook,
-footer nav.follow-us-2 .instagram,
-footer nav.follow-us-2 .twitter,
-footer nav.follow-us-2 .youtube {
+footer nav.follow-us-mobile .facebook,
+footer nav.follow-us-mobile .instagram,
+footer nav.follow-us-mobile .twitter,
+footer nav.follow-us-mobile .youtube {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;

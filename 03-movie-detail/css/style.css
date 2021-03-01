@@ -37,7 +37,9 @@ nav .nav-link {
 	white-space: nowrap;
 }
 
-nav .nav-link:hover {
+nav .nav-link:hover,
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown a.dropdown-toggle:hover {
 	color: #757474;
 }
 
@@ -50,10 +52,6 @@ nav .nav-link:hover {
 	font-weight: 600;
 	color: #414141;
 	margin-right: 46px;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-	color: #757474;
 }
 
 .navbar-nav .form-search img {
@@ -95,38 +93,11 @@ nav .nav-link:hover {
 	text-decoration: none;
 }
 
-.dropdown a.dropdown-toggle:hover {
-	color: #757474;
-}
-
 .ic-search {
 	width: 24px;
 	height: 24px;
 	cursor: pointer;
 }
-
-.btn-sign-up {
-	width: 120px;
-	height: 40px;
-	border-radius: 4px;
-	background-color: #5F2EEA;
-	color: #F7F7FC;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 24px;
-	border: 1px solid transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: .5s ease;
-}
-
-.btn-sign-up:hover {
-	background-color: #F7F7FC;
-	color: #5F2EEA;
-	border: 1px solid #5F2EEA;
-}
-
 
 .img-user {
 	width: 56px;
@@ -228,16 +199,8 @@ hr {
 	color: #14142B;
 }
 
-.date .gj-datepicker .datepicker {
-	border-right: 0;
-	height: 56px;
-	border-radius: 6px;
-	background-color: #EFF0F6;
-	padding-left: 66px;
-	box-sizing: border-box;
-}
-
-.date .gj-datepicker .datepicker2 {
+.date .gj-datepicker .datepicker,
+.date .gj-datepicker .datepicker-mobile {
 	border-right: 0;
 	height: 56px;
 	border-radius: 6px;
@@ -261,7 +224,8 @@ hr {
 	border: 0;
 }
 
-.date .form-inline .location {
+.date .form-inline .location,
+.date .form-mobile .location {
 	padding-left: 66px;
 	background-image: url(../img/location.png);
 	background-repeat: no-repeat;
@@ -270,7 +234,8 @@ hr {
 	background-position-y: center;
 }
 
-.date .form-inline input.datepicker {
+.date .form-inline input.datepicker,
+.date .form-mobile input.datepicker-mobile {
 	background-image: url(../img/calendar.png);
 	background-repeat: no-repeat;
 	background-size: 18px;
@@ -298,23 +263,6 @@ hr {
 	line-height: 28px;
 	letter-spacing: 0.25px;
 	color: #4E4B66;
-}
-
-.date .form-mobile .location {
-	padding-left: 66px;
-	background-image: url(../img/location.png);
-	background-repeat: no-repeat;
-	background-size: 18px;
-	background-position-x: 26px;
-	background-position-y: center;
-}
-
-.date .form-mobile input.datepicker2 {
-	background-image: url(../img/calendar.png);
-	background-repeat: no-repeat;
-	background-size: 18px;
-	background-position-x: 26px;
-	background-position-y: center;
 }
 
 .date .gj-datepicker .btn {
@@ -471,12 +419,6 @@ a.add-cart:hover {
 	justify-content: space-around;
 }
 
-.cinema ul.pagination-custom {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-
 .cinema ul.pagination-custom li a {
 	width: 40px;
 	height: 40px;
@@ -577,9 +519,9 @@ footer nav a:hover {
 	color: #000;
 }
 
-footer nav.explore-2,
-footer nav.sponsor-2,
-footer nav.follow-us-2 {
+footer nav.explore-mobile,
+footer nav.sponsor-mobile,
+footer nav.follow-us-mobile {
 	margin-left: -15px;
 }
 
@@ -598,17 +540,17 @@ footer nav.sponsor a:last-of-type img {
 	height: 26px;
 }
 
-footer nav.sponsor-2 img.row-ebv {
+footer nav.sponsor-mobile img.row-ebv {
 	width: 81px;
 	height: 30px;
 }
 
-footer nav.sponsor-2 img.row-cineone {
+footer nav.sponsor-mobile img.row-cineone {
 	width: 106px;
 	height: 17px;
 }
 
-footer nav.sponsor-2 img.row-hiflix {
+footer nav.sponsor-mobile img.row-hiflix {
 	width: 77px;
 	height: 25px;
 }
@@ -621,10 +563,10 @@ footer nav.follow-us .facebook,
 footer nav.follow-us .instagram,
 footer nav.follow-us .twitter,
 footer nav.follow-us .youtube,
-footer nav.follow-us-2 .facebook,
-footer nav.follow-us-2 .instagram,
-footer nav.follow-us-2 .twitter,
-footer nav.follow-us-2 .youtube {
+footer nav.follow-us-mobile .facebook,
+footer nav.follow-us-mobile .instagram,
+footer nav.follow-us-mobile .twitter,
+footer nav.follow-us-mobile .youtube {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
