@@ -22,6 +22,8 @@
 </head>
 
 <body>
+	<div class="overlay d-lg-none d-none"></div>
+
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3">
 		<div class="container">
@@ -33,37 +35,37 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav d-flex mr-auto">
-					<form class="d-block d-lg-none form-inline my-3 form-search">
+					<form class="d-block d-lg-none form-inline mb-4 mt-5 form-search">
 						<input class="form-control" type="text" placeholder="Search..." aria-label="Search">
 					</form>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Movies <span class="sr-only">(current)</span></a>
+						<a class="nav-link my-2 my-lg-0" href="#">Movies <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Cinemas</a>
+						<a class="nav-link my-2 my-lg-0" href="#">Cinemas</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Buy Ticket</a>
+						<a class="nav-link my-2 my-lg-0" href="#">Buy Ticket</a>
 					</li>
 					<li class="nav-item dropdown d-block d-lg-none">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Location
+						<a class="nav-link mt-4 mb-2 my-lg-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Location <img src="img/ic_dropdown.png" width="18px">
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Jakarta</a>
 							<a class="dropdown-item" href="#">Bandung</a>
 							<a class="dropdown-item" href="#">Surabaya</a>
 						</div>
 					</li>
-					<div class="row d-block d-lg-none mt-4">
+					<div class="row d-block d-lg-none mt-5 mb-2">
 						<div class="col d-flex align-items-center justify-content-center">
 							<p class="copyright-nav">© 2021 Tickitz. All Rights Reserved.</p>
 						</div>
 					</div>
 				</ul>
 				<div class="dropdown d-none d-lg-block">
-					<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Location
+					<a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Location <img src="img/ic_dropdown.png" width="18px">
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 						<a class="dropdown-item" href="#">Jakarta</a>
@@ -645,6 +647,13 @@
 					rightIcon: '<img src="img/Forward.png" width="18">',
 				}
 			});
+		});
+	</script>
+	<script>
+		const hamburgerMenu = document.querySelector('.navbar-toggler');
+		const overlay = document.querySelector('.overlay');
+		hamburgerMenu.addEventListener('click', function() {
+			overlay.classList.toggle('d-block');
 		});
 	</script>
 </body>

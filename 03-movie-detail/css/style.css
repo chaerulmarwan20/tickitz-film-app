@@ -1,14 +1,44 @@
 body {
 	font-family: 'Mulish', sans-serif;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.24);
+	z-index: 1;
+	transition: .5s ease-in-out;
 }
 
 /* Nav */
+.navbar-light .navbar-toggler {
+	border: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url(../img/hamburger-menu.png);
+}
+
 .navbar-nav {
 	margin-left: 70px;
+	text-align: center;
+	white-space: nowrap;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+}
+
+nav .nav-link {
+	font-weight: 600;
+	color: #414141;
 	white-space: nowrap;
+}
+
+nav .nav-link:hover {
+	color: #757474;
 }
 
 .navbar-brand img {
@@ -647,6 +677,27 @@ footer nav.follow-us-2 .youtube {
 		line-height: 22px;
 		letter-spacing: 0.75px;
 		color: #6E7191;
+	}
+
+	.navbar-nav .form-search::after {
+		content: '';
+		display: block;
+		border-bottom: 0.5px solid #DEDEDE;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-top: 40px;
+	}
+
+	nav.navbar ul.navbar-nav li:first-of-type::before,
+	nav.navbar ul.navbar-nav li:first-of-type::after,
+	nav.navbar ul.navbar-nav li:nth-of-type(2)::after,
+	nav.navbar ul.navbar-nav li:nth-of-type(3)::after {
+		content: '';
+		border-bottom: 0.5px solid #DEDEDE;
+		position: absolute;
+		left: 0;
+		right: 0;
 	}
 }
 
