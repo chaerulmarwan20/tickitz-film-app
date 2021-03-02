@@ -479,11 +479,12 @@ footer p.follow-us {
 	font-weight: 700;
 	font-size: 16px;
 	letter-spacing: 0.5px;
+	line-height: 20px;
 	color: #000;
 	margin-bottom: 30px;
 }
 
-footer nav a {
+footer nav a.nav-link {
 	margin-bottom: 14px;
 	font-weight: 400;
 	font-size: 14px;
@@ -493,14 +494,16 @@ footer nav a {
 	transition: .5s ease;
 }
 
-footer nav a:hover {
-	color: #000;
+footer nav a.nav-link:hover {
+	color: black;
 }
 
-footer nav.explore-mobile,
-footer nav.sponsor-mobile,
-footer nav.follow-us-mobile {
-	margin-left: -15px;
+footer nav.explore a.nav-link {
+	margin-top: -10px;
+}
+
+footer nav.sponsor {
+	transform: translateY(-2px);
 }
 
 footer nav.sponsor a:first-of-type img {
@@ -518,21 +521,6 @@ footer nav.sponsor a:last-of-type img {
 	height: 26px;
 }
 
-footer nav.sponsor-mobile img.row-ebv {
-	width: 81px;
-	height: 30px;
-}
-
-footer nav.sponsor-mobile img.row-cineone {
-	width: 106px;
-	height: 17px;
-}
-
-footer nav.sponsor-mobile img.row-hiflix {
-	width: 77px;
-	height: 25px;
-}
-
 footer nav.follow-us a {
 	white-space: nowrap;
 }
@@ -540,14 +528,23 @@ footer nav.follow-us a {
 footer nav.follow-us .facebook,
 footer nav.follow-us .instagram,
 footer nav.follow-us .twitter,
-footer nav.follow-us .youtube,
-footer nav.follow-us-mobile .facebook,
-footer nav.follow-us-mobile .instagram,
-footer nav.follow-us-mobile .twitter,
-footer nav.follow-us-mobile .youtube {
+footer nav.follow-us .youtube {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
+}
+
+footer nav.follow-us span {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	color: #6E7191;
+	transition: .5s ease;
+}
+
+footer nav.follow-us span:hover {
+	color: #000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -838,15 +835,6 @@ footer nav.follow-us-mobile .youtube {
 		background-color: #F7F7FC;
 		color: #5F2EEA;
 	}
-}
-
-@media screen and (max-width: 576px) {
-
-	.seat-mobile .container-seat-mobile-1,
-	.seat-mobile .container-seat-mobile-2 {
-		grid-template-columns: repeat(7, 14px);
-		grid-template-rows: repeat(7, 14px);
-	}
 
 	footer .logo {
 		width: 153px;
@@ -858,10 +846,66 @@ footer nav.follow-us-mobile .youtube {
 		line-height: 24px;
 	}
 
+	footer nav a.nav-link {
+		margin-bottom: 0px;
+		line-height: 26px;
+		letter-spacing: 0.75px;
+		color: #6E7191;
+	}
+
+	footer nav.explore a:nth-of-type(3) {
+		order: 4;
+	}
+
+	footer nav.sponsor a:first-of-type img {
+		width: 81px;
+		height: 30px;
+	}
+
+	footer nav.sponsor a:nth-of-type(2) img {
+		width: 106px;
+		height: 17px;
+	}
+
+	footer nav.sponsor a:last-of-type img {
+		width: 77px;
+		height: 25px;
+	}
+
 	footer p.explore,
 	footer p.our-sponsor,
 	footer p.follow-us {
 		font-weight: 600;
+		line-height: 28px;
 		letter-spacing: 0.75px;
+		margin-bottom: 0px;
+	}
+
+	footer nav.follow-us .facebook,
+	footer nav.follow-us .instagram,
+	footer nav.follow-us .twitter,
+	footer nav.follow-us .youtube {
+		width: 24px;
+		height: 24px;
+		margin-right: 0px;
+	}
+
+	footer nav.follow-us span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	.seat-mobile .container-seat-mobile-1,
+	.seat-mobile .container-seat-mobile-2 {
+		grid-template-columns: repeat(7, 14px);
+		grid-template-rows: repeat(7, 14px);
+	}
+}
+
+@media screen and (max-width: 435px) {
+	footer nav.explore a.nav-link {
+		margin-top: 0px;
 	}
 }
