@@ -240,11 +240,11 @@ header h1 {
 /* Upcoming Movies */
 .upcoming-movies {
 	padding-bottom: 138px;
-	overflow: hidden;
 }
 
 .upcoming-movies .container-btn-month {
 	white-space: nowrap;
+	overflow: auto;
 	margin-bottom: 50px;
 }
 
