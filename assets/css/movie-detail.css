@@ -199,20 +199,11 @@ hr {
 	color: #14142B;
 }
 
-.date .gj-datepicker .datepicker,
-.date .gj-datepicker .datepicker-mobile {
-	border-right: 0;
-	height: 56px;
-	border-radius: 6px;
-	background-color: #EFF0F6;
-	padding-left: 66px;
-	box-sizing: border-box;
-}
-
-.date .form-inline input,
-.date .form-inline .location {
-	height: 56px;
+.date .form-inline input[type="date"],
+.date .form-inline select {
 	width: 284px;
+	height: 56px;
+	appearance: none;
 	background-color: #EFF0F6;
 	border-radius: 6px;
 	margin-left: 24px;
@@ -222,61 +213,16 @@ hr {
 	letter-spacing: 0.25px;
 	color: #4E4B66;
 	border: 0;
+	padding-left: 20px;
+	box-sizing: border-box;
 }
 
-.date .form-inline .location,
-.date .form-mobile .location {
-	padding-left: 66px;
+.date .form-inline select {
 	background-image: url(../img/movie-detail/location.png);
 	background-repeat: no-repeat;
 	background-size: 18px;
-	background-position-x: 26px;
+	background-position-x: 94%;
 	background-position-y: center;
-}
-
-.date .form-inline input.datepicker,
-.date .form-mobile input.datepicker-mobile {
-	background-image: url(../img/movie-detail/calendar.png);
-	background-repeat: no-repeat;
-	background-size: 18px;
-	background-position-x: 26px;
-	background-position-y: center;
-}
-
-.date .form-mobile input,
-.date .form-mobile .location {
-	height: 56px;
-	width: 289px;
-	background-color: #EFF0F6;
-	border-radius: 6px;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.25px;
-	color: #4E4B66;
-	border: 0;
-}
-
-.date .form-mobile input::-webkit-input-placeholder {
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.25px;
-	color: #4E4B66;
-}
-
-.date .gj-datepicker .btn {
-	background-color: #EFF0F6;
-	padding-right: 30px;
-	border: 0;
-}
-
-.ic-forward {
-	margin-left: 90px;
-}
-
-.ic-forward-mobile {
-	margin-left: 111px;
 }
 
 /* Cinema */
@@ -286,10 +232,6 @@ hr {
 
 .container-cinema {
 	display: flex;
-}
-
-.container-cinema-mobile {
-	display: none;
 }
 
 .cinema-card {
@@ -305,11 +247,6 @@ hr {
 .cinema-card img.ebv {
 	width: 112px;
 	height: 42px;
-}
-
-.cinema-card img.ebv-mobile {
-	width: 81px;
-	height: 31px;
 }
 
 .cinema-card img.cineone {
@@ -638,11 +575,39 @@ footer nav.follow-us span:hover {
 		left: 0;
 		right: 0;
 	}
+
+	.movie-detail div:first-of-type {
+		order: 1;
+	}
+
+	.movie-detail div:nth-of-type(2) {
+		order: 3;
+	}
+
+	.movie-detail div:nth-of-type(3) {
+		order: 2;
+	}
+
+	.movie-detail div:last-of-type {
+		order: 4;
+	}
 }
 
 @media screen and (max-width: 767px) {
-	.date .gj-datepicker .btn {
-		padding-right: 34px;
+	.date .form-inline {
+		margin-top: -10px;
+	}
+
+	.date .form-inline input[type="date"],
+	.date .form-inline select {
+		width: 264px;
+		height: 48px;
+		border-radius: 4px;
+		margin-left: 0;
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.75px;
+		margin-top: 15px;
 	}
 
 	footer .logo {
@@ -741,9 +706,12 @@ footer nav.follow-us span:hover {
 		line-height: 28px;
 	}
 
-	.text-date,
-	.text-duration {
-		white-space: nowrap;
+	header p span {
+		display: none;
+	}
+
+	header p span.d-none {
+		display: block !important;
 	}
 
 	.synopsis h2 {
@@ -766,18 +734,20 @@ footer nav.follow-us span:hover {
 		color: #000;
 	}
 
-	.container-cinema {
+	.cinema-card {
+		width: 327px;
+		height: 375px;
+	}
+
+	.cinema-card img.ebv {
+		width: 81px;
+		height: 31px;
+	}
+
+	.cinema-card h2 {
 		display: none;
 	}
 
-	.container-cinema-mobile {
-		display: flex;
-	}
-
-	.cinema-card {
-		width: 327px;
-		height: 370px;
-	}
 
 	.cinema-card p {
 		font-size: 13px;
@@ -789,6 +759,7 @@ footer nav.follow-us span:hover {
 
 	.cinema-card hr {
 		width: 277px;
+		margin-top: 5px;
 	}
 
 	.cinema-card p.nav-link {
@@ -804,6 +775,10 @@ footer nav.follow-us span:hover {
 	.cinema-card p.price {
 		font-size: 14px;
 		line-height: 26px;
+	}
+
+	.cinema ul.pagination-custom {
+		margin-top: -17px;
 	}
 }
 
