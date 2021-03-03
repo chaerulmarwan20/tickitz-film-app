@@ -281,25 +281,11 @@ nav.total-payment {
 	margin-right: 40px;
 }
 
-.payment-detail .payment-method p.or-mobile {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.75px;
-	color: #A0A3BD;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
 .payment-detail .payment-method hr {
 	border: 1px solid #DEDEDE;
 	width: 250px;
 	margin-left: 0;
 	margin-right: 0;
-}
-
-.payment-detail .payment-method .hr-mobile {
-	width: 180px;
 }
 
 .payment-detail p.pay {
@@ -353,28 +339,6 @@ nav.total-payment {
 }
 
 .payment-detail .btn-order:hover {
-	border: 2px solid #5F2EEA;
-	background-color: #F7F7FC;
-	color: #5F2EEA;
-}
-
-.payment-detail .btn-order-mobile {
-	width: 100%;
-	height: 56px;
-	border-radius: 4px;
-	border: 2px solid transparent;
-	box-sizing: border-box;
-	background-color: #5F2EEA;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.75px;
-	color: #F7F7FC;
-	filter: drop-shadow(0px 8px 16px rgba(95, 46, 234, 0.24));
-	transition: .5s ease;
-}
-
-.payment-detail .btn-order-mobile:hover {
 	border: 2px solid #5F2EEA;
 	background-color: #F7F7FC;
 	color: #5F2EEA;
@@ -567,6 +531,147 @@ footer nav.follow-us span:hover {
 		margin-top: 100px !important;
 	}
 
+	.total-payment h2 {
+		font-size: 16px;
+	}
+
+	.total-payment p {
+		font-size: 20px;
+	}
+
+	.payment-detail .payment-method .btn-payment {
+		width: 80px;
+		height: 32px;
+		border: 0.5px solid #DEDEDE;
+		border-radius: 4px;
+		margin-left: 16px;
+		margin-bottom: 16px;
+	}
+
+	.payment-detail .payment-method .btn-payment:first-of-type img {
+		width: 35px;
+	}
+
+	.payment-detail .payment-method .btn-payment:nth-of-type(2) img {
+		width: 38px;
+	}
+
+	.payment-detail .payment-method .btn-payment:nth-of-type(3) img {
+		width: 50px;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:first-of-type img {
+		width: 15px;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:nth-of-type(2) img {
+		width: 51px;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:nth-of-type(5) img {
+		width: 43px;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:first-of-type {
+		order: 1;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:nth-of-type(2) {
+		order: 3;
+	}
+
+	.payment-detail .payment-method div:nth-of-type(2) .btn-payment:nth-of-type(5) {
+		order: 2;
+	}
+
+	.payment-detail .payment-method p.or {
+		font-size: 14px;
+		line-height: 24px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-top: 3px;
+	}
+
+	.payment-detail .payment-method hr {
+		border: 0.5px solid #DEDEDE;
+		width: 90px;
+	}
+
+	.payment-detail p.pay {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.payment-detail h1 {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.75px;
+	}
+
+	.payment-detail h1.choose-payment {
+		margin-top: 75px !important;
+	}
+
+	.payment-detail h1.personal-info-heading {
+		position: relative;
+		z-index: -1;
+	}
+
+	.payment-detail .personal-info {
+		border-radius: 4px;
+	}
+
+	.payment-detail .personal-info form label {
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.75px;
+	}
+
+	.payment-detail .personal-info form input {
+		height: 48px;
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 35px;
+		margin-top: 10px;
+		padding-left: 24px;
+	}
+
+	.payment-detail .personal-info form input.phone-number {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		padding-left: 24px;
+	}
+
+	.input-group-text {
+		height: 48px;
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+
+	.payment-detail .personal-info form input::-webkit-input-placeholder {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 23px;
+		letter-spacing: 0.75px;
+		color: #4E4B66;
+	}
+
+	.payment-detail .personal-info .alert-img {
+		width: 22px;
+		height: 22px;
+	}
+
+	.payment-detail .personal-info .custom-alert {
+		height: 48px;
+	}
+
+	.payment-detail .btn-order {
+		width: 100%;
+	}
+
 	footer .logo {
 		width: 153px;
 		height: 60px;
@@ -623,100 +728,6 @@ footer nav.follow-us span:hover {
 
 	footer nav.follow-us span {
 		display: none;
-	}
-}
-
-@media screen and (max-width: 576px) {
-	.total-payment h2 {
-		font-size: 16px;
-	}
-
-	.total-payment p {
-		font-size: 20px;
-	}
-
-	.payment-detail .payment-method .btn-payment {
-		width: 80px;
-		height: 32px;
-		border: 0.5px solid #DEDEDE;
-		border-radius: 4px;
-		margin-left: 16px;
-		margin-bottom: 16px;
-	}
-
-	.payment-detail .payment-method p.or-mobile {
-		font-size: 14px;
-		line-height: 24px;
-		margin-left: 30px;
-		margin-right: 30px;
-	}
-
-	.payment-detail .payment-method .hr-mobile {
-		width: 90px;
-		border: 0.5px solid #DEDEDE;
-		margin-top: 12px;
-	}
-
-	.payment-detail p.pay {
-		font-size: 14px;
-		line-height: 24px;
-	}
-
-	.payment-detail h1 {
-		font-weight: 600;
-		font-size: 18px;
-		line-height: 24px;
-		letter-spacing: 0.75px;
-	}
-
-	.payment-detail .personal-info {
-		border-radius: 4px;
-	}
-
-	.payment-detail .personal-info form label {
-		font-size: 14px;
-		line-height: 26px;
-		letter-spacing: 0.75px;
-	}
-
-	.payment-detail .personal-info form input {
-		height: 48px;
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 35px;
-		margin-top: 10px;
-		padding-left: 24px;
-	}
-
-	.payment-detail .personal-info form input.phone-number {
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-		padding-left: 24px;
-	}
-
-	.input-group-text {
-		height: 48px;
-		font-size: 14px;
-		line-height: 24px;
-		margin-top: 10px;
-		margin-bottom: 35px;
-	}
-
-	.payment-detail .personal-info form input::-webkit-input-placeholder {
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 23px;
-		letter-spacing: 0.75px;
-		color: #4E4B66;
-	}
-
-	.payment-detail .personal-info .alert-img {
-		width: 22px;
-		height: 22px;
-	}
-
-	.payment-detail .personal-info .custom-alert {
-		height: 48px;
 	}
 }
 

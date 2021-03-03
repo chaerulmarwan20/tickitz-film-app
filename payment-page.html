@@ -118,8 +118,8 @@
 							</div>
 						</div>
 					</div>
-					<h1 class="mt-5 d-none d-md-block">Choose a Payment Method</h1>
-					<div class="card d-none d-md-block payment-method mt-4 pt-5 pb-4">
+					<h1 class="mt-5 choose-payment"><span class="d-none d-md-inline-block">Choose a</span> Payment Method</h1>
+					<div class="card payment-method mt-4 pt-5 pb-4">
 						<div class="row justify-content-center">
 							<div class="d-flex">
 								<a class="btn btn-payment">
@@ -131,18 +131,21 @@
 								<a class="btn btn-payment">
 									<img src="assets/img/payment-page/Logo GoPay (SVG-240p) - FileVector69 1.png" width="106">
 								</a>
-								<a class="btn btn-payment">
+								<a class="btn btn-payment d-none d-md-block">
 									<img src="assets/img/payment-page/logos_paypal.png" width="31">
 								</a>
 							</div>
 							<div class="d-flex">
+								<a class="btn btn-payment d-md-none">
+									<img src="assets/img/payment-page/logos_paypal.png" width="31">
+								</a>
 								<a class="btn btn-payment">
 									<img src="assets/img/payment-page/Logo DANA (PNG-240p) - FileVector69 1.png" width="108">
 								</a>
-								<a class="btn btn-payment">
+								<a class="btn btn-payment d-none d-md-block">
 									<img src="assets/img/payment-page/Bank BCA Logo (SVG-240p) - FileVector69 1.png" width="85">
 								</a>
-								<a class="btn btn-payment">
+								<a class="btn btn-payment d-none d-md-block">
 									<img src="assets/img/payment-page/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.png" width="45">
 								</a>
 								<a class="btn btn-payment">
@@ -150,57 +153,18 @@
 								</a>
 							</div>
 						</div>
-						<div class="row justify-content-center mt-3 mb-4">
+						<div class="d-flex ml-3 ml-md-0 justify-content-center mt-2 mt-md-3 mb-2 mb-md-4">
 							<hr>
 							<p class="or">or</p>
 							<hr>
 						</div>
-						<div class="row justify-content-center">
+						<div class="row ml-2 ml-md-0 justify-content-center">
 							<p class="pay">Pay via cash. <span>See how it work</span></p>
 						</div>
-					</div>
-					<h1 class="d-md-none" style="margin-top: 80px;">Payment Method</h1>
-					<div class="card d-md-none payment-method mt-4 pt-5 pb-4">
-						<div class="row justify-content-center">
-							<div class="d-flex">
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/logos_google-pay.png" width="35">
-								</a>
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/logos_visa.png" width="38">
-								</a>
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/Logo GoPay (SVG-240p) - FileVector69 1.png" width="50">
-								</a>
-							</div>
-							<div class="d-flex">
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/logos_paypal.png" width="15">
-								</a>
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/ovo.png" width="43">
-								</a>
-								<a class="btn btn-payment">
-									<img src="assets/img/payment-page/Logo DANA (PNG-240p) - FileVector69 1.png" width="51">
-								</a>
-							</div>
-						</div>
-						<div class="row justify-content-center ml-1 ml-sm-0 mt-2 mb-2">
-							<hr class="hr-mobile">
-							<p class="or-mobile">or</p>
-							<hr class="hr-mobile">
-						</div>
-						<div class="row justify-content-center">
-							<p class="pay">Pay via cash. <span>See how it work</span></p>
-						</div>
-					</div>
-					<div class="row d-none d-md-flex justify-content-between pt-5 ml-auto">
-						<button class="btn btn-previous">Previous step</button>
-						<button class="btn btn-order">Pay your order</button>
 					</div>
 				</div>
 				<div class="col-lg-12 col-xl-4 mt-5 mt-xl-0">
-					<h1 style="position: relative; z-index: -1;">Personal Info</h1>
+					<h1 class="personal-info-heading">Personal Info</h1>
 					<div class="card personal-info p-4 mt-4">
 						<form class="mt-4">
 							<div class="form-group">
@@ -226,9 +190,12 @@
 							<span class="ml-4">Fill your data correctly.</span>
 						</div>
 					</div>
-					<div class="row mx-auto d-md-none justify-content-center mt-5">
-						<button class="btn btn-order-mobile">Pay your order</button>
-					</div>
+				</div>
+			</div>
+			<div class="row pt-5 ml-auto">
+				<div class="col-lg-12 pl-0 col-xl-8 d-flex justify-content-between">
+					<button class="btn btn-previous d-none d-md-block">Previous step</button>
+					<button class="btn btn-order mx-auto mx-md-0">Pay your order</button>
 				</div>
 			</div>
 		</div>
