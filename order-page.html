@@ -78,18 +78,18 @@
 	</nav>
 	<!-- End Navbar -->
 
-	<section class="movie d-none d-md-block">
+	<section class="movie">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-7">
-					<h1>Movie Selected</h1>
-					<div class="movie-selected mt-3 d-flex justify-content-between align-items-center px-4 pt-4 pb-3">
+					<h1 class="d-none d-md-block">Movie Selected</h1>
+					<div class="movie-selected mt-3 d-md-flex justify-content-between align-items-center px-4 pt-4 pb-3 d-none">
 						<h2>Spider-Man: Homecoming</h2>
 						<button class="btn btn-change-movie">Change movie</button>
 					</div>
-					<h1 class="mt-4">Choose Your Seat</h1>
+					<h1 class="mt-md-4">Choose Your Seat</h1>
 					<div class="seat mt-3">
-						<p class="text-center">Screen</p>
+						<p class="text-center screen">Screen</p>
 						<hr class="mb-4">
 						<div class="d-flex justify-content-between">
 							<div class="container-seat-1">
@@ -222,20 +222,28 @@
 								<span>14</span>
 							</div>
 						</div>
-						<p class="seating-key mt-3">Seating Key</p>
-						<div class="d-flex justify-content-around availability">
-							<p>Available</p>
-							<p>Selected</p>
-							<p>Love nest</p>
-							<p>Sold</p>
+						<p class="seating-key mt-1 mt-md-3">Seating Key</p>
+						<div class="row justify-content-around availability mt-3 mt-md-0">
+							<div class="col d-md-flex justify-content-around d-none">
+								<p>Available</p>
+								<p>Selected</p>
+								<p>Love nest</p>
+								<p>Sold</p>
+							</div>
+							<div class="col pl-4 ml-2 d-md-none">
+								<p>A - G</p>
+								<p>Available</p>
+								<p>Love nest</p>
+							</div>
+							<div class="col pl-0 d-md-none">
+								<p>1 - 14</p>
+								<p>Selected</p>
+								<p>Sold</p>
+							</div>
 						</div>
 					</div>
-					<div class="btn-group-custom d-flex justify-content-between mt-5">
-						<button class="btn btn-change-your-movie">Change your Movie</button>
-						<button class="btn btn-checkout">Checkout now</button>
-					</div>
 				</div>
-				<div class="col-12 col-xl-5 container-order-info">
+				<div class="col-12 col-xl-5 container-order-info mt-4 mt-xl-0 d-none d-md-block">
 					<h1>Order Info</h1>
 					<div class="order-info mt-3 pt-4 pb-3">
 						<div class="row d-flex flex-column align-items-center">
@@ -266,157 +274,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		</div>
-		</div>
-	</section>
-
-	<section class="movie-mobile d-md-none">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-sm-12">
-					<h1>Choose Your Seat</h1>
-					<div class="seat-mobile py-4 px-4 px-sm-5 mt-3">
-						<hr>
-						<div class="d-flex justify-content-between" style="position: relative;">
-							<div class="container-seat-mobile-1">
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-							</div>
-							<div class="container-seat-mobile-2">
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
-							</div>
-						</div>
-						<p class="mt-3 mb-3 seating-key">Seating Key</p>
-						<div class="d-flex">
-							<div class="d-flex align-items-center mr-5">
-								<img src="assets/img/order-page/Forward Arrow.png" width="20">
-								<span class="ml-2">A - G</span>
-							</div>
-							<div class="d-flex align-items-center">
-								<img src="assets/img/order-page/Forward Arrow-2.png" width="20">
-								<span class="ml-2">1 - 14</span>
-							</div>
-						</div>
-						<div class="d-flex mt-3">
-							<div class="d-flex mr-5">
-								<div class="grey"></div>
-								<p class="ml-3">Available</p>
-							</div>
-							<div class="d-flex">
-								<div class="blue"></div>
-								<p class="ml-3">Selected</p>
-							</div>
-						</div>
-						<div class="d-flex ">
-							<div class="d-flex mr-5">
-								<div class="pink"></div>
-								<p class="ml-3">Love nest</p>
-							</div>
-							<div class="d-flex">
-								<div class="black"></div>
-								<p class="ml-3">Sold</p>
-							</div>
-						</div>
-					</div>
+			<div class="row d-md-none">
+				<div class="col-12">
 					<div class="choosed d-flex align-items-center justify-content-between mt-3 py-2 px-3">
 						<h2 class="mt-2">Choosed</h2>
 						<p class="mt-3">C4, C5, C6</p>
 					</div>
+				</div>
+				<div class="col-12">
 					<div class="input-choosed d-flex align-items-center justify-content-around mt-3 py-3 px-3">
 						<select class="custom-select">
 							<option value="C">C</option>
@@ -429,6 +294,8 @@
 							<option value="6">6</option>
 						</select>
 					</div>
+				</div>
+				<div class="col-12">
 					<div class="input-choosed d-flex align-items-center justify-content-around mt-3 py-3 px-3">
 						<select class="custom-select">
 							<option value="C">C</option>
@@ -441,6 +308,8 @@
 							<option value="6">6</option>
 						</select>
 					</div>
+				</div>
+				<div class="col-12">
 					<div class="input-choosed d-flex align-items-center justify-content-around mt-3 py-3 px-3">
 						<select class="custom-select">
 							<option value="C">C</option>
@@ -452,13 +321,22 @@
 							<option value="5">5</option>
 							<option value="4">4</option>
 						</select>
-					</div>
-					<div class="d-flex flex-column mt-4 mb-4">
-						<a class="btn btn-add-seat">Add new seat</a>
-						<a class="btn btn-checkout-now mt-5">Checkout now</a>
 					</div>
 				</div>
 			</div>
+			<div class="row mt-5 pb-4">
+				<div class="col-12 col-md-6 col-xl-3">
+					<button class="btn btn-change-your-movie">
+						<span class="d-none d-md-block">Change your Movie</span>
+						<span class="d-block d-md-none">Add new seat</span>
+					</button>
+				</div>
+				<div class="col-12 col-md-6 col-xl-3 ml-xl-5 d-flex justify-content-start justify-content-md-end d-xl-block">
+					<button class="btn btn-checkout">Checkout now</button>
+				</div>
+			</div>
+		</div>
+		</div>
 		</div>
 	</section>
 
