@@ -13,14 +13,18 @@ main {
 }
 
 main section {
+	padding-left: 100px;
+	padding-top: 80px;
+	padding-right: 32px;
+	box-sizing: border-box;
 	grid-area: section;
 	background-image: url(../img/bg.png);
 	background-size: cover;
 	font-family: "Inter", sans-serif;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: start;
+	align-items: flex-start;
 	position: relative;
 }
 
@@ -36,17 +40,59 @@ main section::after {
 }
 
 main section img {
-	width: 37vmax;
-	height: 14vmax;
+	width: 20.3vmax;
+	margin-bottom: 60px;
 	z-index: 1;
 }
 
 main section h1 {
 	z-index: 1;
+	font-weight: 470;
+	font-size: 3.6vmax;
+	color: #fff;
+	line-height: 60px;
+	letter-spacing: 0.003em;
+}
+
+main section p {
+	z-index: 1;
 	font-weight: 400;
-	font-size: 3.5vmax;
-	color: rgba(255, 255, 255, 0.8);
-	margin-top: 0px;
+	font-size: 1.8vmax;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+main section span.one,
+main section span.two,
+main section span.three {
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main section span.one {
+	background-color: #FFF;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.005em;
+	color: rgba(41, 3, 65, 0.5);
+}
+
+main section span.two,
+main section span.three {
+	background-color: transparent;
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.005em;
+	color: #FFFFFF;
 }
 
 main aside img {
@@ -68,8 +114,10 @@ main aside {
 main aside h1 {
 	font-family: "Inter", sans-serif;
 	font-weight: 600;
-	font-size: 3.5vmax;
+	font-size: 26px;
 	color: #121212;
+	line-height: 33px;
+	letter-spacing: 0.005em;
 	margin-bottom: 12px;
 	margin-right: auto;
 }
@@ -113,6 +161,18 @@ main aside form input:focus {
 	border: 1px solid transparent;
 }
 
+main aside form div.checkbox label {
+	font-weight: 400;
+	font-size: 1.3vmax;
+	letter-spacing: 0.75px;
+	color: #696F79;
+}
+
+main aside form div.checkbox input[type="checkbox"] {
+	width: 24px;
+	height: 24px;
+}
+
 main aside form input::-webkit-input-placeholder {
 	font-size: 16px;
 	font-weight: 400;
@@ -127,7 +187,7 @@ main aside form input[type="password"] {
 	background-position-y: center;
 }
 
-.btn-sign-in {
+.btn-join {
 	font-family: "Mulish", sans-serif;
 	width: 400px;
 	height: 64px;
@@ -142,14 +202,14 @@ main aside form input[type="password"] {
 	transition: 0.5s ease;
 }
 
-.btn-sign-in:hover {
+.btn-join:hover {
 	cursor: pointer;
 	background-color: #f7f7fc;
 	color: #5f2eea;
 	border: 1px solid #5f2eea;
 }
 
-.btn-sign-in:active {
+.btn-join:active {
 	border: 1px solid transparent;
 }
 
@@ -264,6 +324,10 @@ main aside p.or::after {
 		display: none;
 	}
 
+	main aside form div.checkbox {
+		display: none !important;
+	}
+
 	main aside img {
 		display: block;
 		width: 85px;
@@ -298,7 +362,7 @@ main aside p.or::after {
 		width: 327px;
 	}
 
-	.btn-sign-in {
+	.btn-join {
 		width: 327px;
 		font-size: 16px;
 		border-radius: 12px;

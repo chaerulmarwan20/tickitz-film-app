@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-light .navbar-toggler-icon {
-	background-image: url(../img/movie-detail/hamburger-menu.png);
+	background-image: url(../img/hamburger-menu.png);
 }
 
 .navbar-nav {
@@ -72,7 +72,7 @@ nav .nav-link:hover,
 	color: #A0A3BD;
 	font-weight: 600;
 	font-size: 14px;
-	background-image: url(../img/movie-detail/ic-search-2.png);
+	background-image: url(../img/ic-search-2.png);
 	background-repeat: no-repeat;
 	background-size: 20px;
 	background-position-x: 16px;
@@ -218,7 +218,7 @@ hr {
 }
 
 .date .form-inline select {
-	background-image: url(../img/movie-detail/location.png);
+	background-image: url(../img/location.png);
 	background-repeat: no-repeat;
 	background-size: 18px;
 	background-position-x: 94%;
