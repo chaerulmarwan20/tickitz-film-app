@@ -61,6 +61,13 @@ main section p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+main section p.main {
+	z-index: 1;
+	font-weight: 400;
+	font-size: 1.8vmax;
+	color: #FFF;
+}
+
 main section span.one,
 main section span.two,
 main section span.three {
@@ -171,6 +178,7 @@ main aside form div.checkbox label {
 main aside form div.checkbox input[type="checkbox"] {
 	width: 24px;
 	height: 24px;
+	cursor: pointer;
 }
 
 main aside form input::-webkit-input-placeholder {
