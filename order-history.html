@@ -14,9 +14,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
 	<!-- My CSS -->
-	<link rel="stylesheet" href="assets/css/profile-page.css" />
+	<link rel="stylesheet" href="assets/css/order-history.css" />
 
-	<title>Profile Page</title>
+	<title>Order History</title>
 </head>
 
 <body>
@@ -82,15 +82,15 @@
 
 	<nav class="navbar pt-4 fixed-top pb-3 details-order d-block d-lg-none">
 		<div class="container justify-content-around nav-details">
-			<a class="active">Details Account</a>
-			<a>Order History</a>
+			<a>Details Account</a>
+			<a class="active">Order History</a>
 		</div>
 	</nav>
 
-	<section class="profile">
+	<section class="order-history mb-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-xl-4">
+				<div class="col-lg-5 col-xl-4 d-none d-md-block">
 					<div class="info d-block pt-4">
 						<div class="row px-5">
 							<div class="col pl-0">
@@ -136,80 +136,64 @@
 				</div>
 				<div class="col-lg-7 col-xl-8">
 					<div class="breadcrumbs-custom d-none d-lg-flex align-items-center">
-						<a class="mx-5 active">Account Settings</a>
-						<a>Order History</a>
+						<a class="mx-5">Account Settings</a>
+						<a class="active">Order History</a>
 					</div>
-					<h6 class="d-block d-lg-none mt-4">Account Settings</h6>
-					<div class="details-information mt-4 py-5 px-4">
-						<p>Details Information</p>
-						<hr />
-						<form class="mt-5">
-							<div class="row">
-								<div class="col-xl-6 d-none d-lg-block">
-									<div class="form-group">
-										<label for="first-name">First Name</label>
-										<input type="text" class="form-control" name="first-name" id="first-name" placeholder="Jonas" />
-									</div>
-								</div>
-								<div class="col-xl-6 d-none d-lg-block">
-									<div class="form-group">
-										<label for="last-name">Last Name</label>
-										<input type="text" class="form-control" name="last-name" id="last-name" placeholder="El Rodriguez" />
-									</div>
-								</div>
-								<div class="col-xl-6 d-block d-lg-none">
-									<div class="form-group">
-										<label for="full-name">Full Name</label>
-										<input type="text" class="form-control" name="full-name" id="full-name" placeholder="Jonas El Rodriguez" />
-									</div>
-								</div>
+					<div class="container">
+						<div class="detail-order row justify-content-between flex-column flex-md-row align-items-start align-items-md-center mt-0 mt-md-4 py-4">
+							<div class="left pl-4 pl-md-5 order-1 order-md-0">
+								<p class="m-0">Tuesday, 07 July 2020 - 04:30pm</p>
+								<h3 class="mt-1">Spider-Man: Homecoming</h3>
 							</div>
-							<div class="row">
-								<div class="col-xl-6">
-									<div class="form-group">
-										<label for="email">E-mail</label>
-										<input type="email" class="form-control" name="email" id="email" placeholder="jonasrodrigu123@gmail.com" />
-									</div>
-								</div>
-								<div class="col-xl-6">
-									<div class="form-group">
-										<label for="phone_number">Phone Number</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<div class="input-group-text">+62</div>
-											</div>
-											<input type="number" class="form-control" placeholder="81445687121" />
-										</div>
-									</div>
-								</div>
+							<div class="right pr-0 pr-md-5 pl-4 pl-md-0 order-0 order-md-1 mb-4 mb-md-0">
+								<img src="assets/img/CineOne21 2.png" alt="CineOne" width="122">
 							</div>
-						</form>
-					</div>
-					<div class="account-privacy mt-4 py-5 px-4">
-						<p>Account and Privacy</p>
-						<hr />
-						<form class="mt-5">
-							<div class="row">
-								<div class="col-xl-6">
-									<div class="form-group" style="position: relative">
-										<label for="password">New Password</label>
-										<input type="password" class="form-control" id="password" placeholder="Write your password" />
-									</div>
-								</div>
-								<div class="col-xl-6">
-									<div class="form-group">
-										<label for="confirm-password">Confirm
-											<span class="d-none d-lg-inline">Password</span></label>
-										<input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" />
-									</div>
-								</div>
+							<hr class="mt-4 mb-4 order-2">
+							<div class="pl-4 pl-md-5 pb-2 order-3">
+								<button class="btn btn-ticket ml-2 ml-sm-0">Ticket in active</button>
 							</div>
-						</form>
-					</div>
-					<div class="text-center text-lg-left">
-						<button type="button" class="btn btn-update my-5">
-							Update changes
-						</button>
+							<div class="pr-0 pr-md-5 pb-2 order-4 d-none d-md-block">
+								<select class="custom-select">
+									<option>Show Details</option>
+								</select>
+							</div>
+						</div>
+						<div class="detail-order row justify-content-between flex-column flex-md-row align-items-start align-items-md-center mt-4 py-4">
+							<div class="left pl-4 pl-md-5 order-1 order-md-0">
+								<p class="m-0">Monday, 14 June 2020 - 02:00pm</p>
+								<h3 class="mt-1">Avengers: End Game</h3>
+							</div>
+							<div class="right pr-0 pr-md-5 pl-4 pl-md-0 order-0 order-md-1 mb-4 mb-md-0">
+								<img src="assets/img/ebv.id 2.png" alt="Ebv" width="122">
+							</div>
+							<hr class="mt-4 mb-4 order-2">
+							<div class="pl-4 pl-md-5 pb-2 order-3">
+								<button class="btn btn-ticket-used ml-2 ml-sm-0">Ticket used</button>
+							</div>
+							<div class="pr-0 pr-md-5 pb-2 order-4 d-none d-md-block">
+								<select class="custom-select">
+									<option>Show Details</option>
+								</select>
+							</div>
+						</div>
+						<div class="detail-order row justify-content-between flex-column flex-md-row align-items-start align-items-md-center mt-4 py-4 d-none d-md-flex">
+							<div class="left pl-4 pl-md-5 order-1 order-md-0">
+								<p class="m-0">Monday, 10 March 2020 - 04:00pm</p>
+								<h3 class="mt-1">Thor: Ragnarok</h3>
+							</div>
+							<div class="right pr-0 pr-md-5 pl-4 pl-md-0 order-0 order-md-1 mb-4 mb-md-0">
+								<img src="assets/img/ebv.id 2.png" alt="Ebv" width="122">
+							</div>
+							<hr class="mt-4 mb-4 order-2">
+							<div class="pl-4 pl-md-5 pb-2 order-3">
+								<button class="btn btn-ticket-used ml-2 ml-sm-0">Ticket used</button>
+							</div>
+							<div class="pr-0 pr-md-5 pb-2 order-4 d-none d-md-block">
+								<select class="custom-select">
+									<option>Show Details</option>
+								</select>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
