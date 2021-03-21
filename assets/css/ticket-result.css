@@ -295,7 +295,7 @@ section.transaction p {
   font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.25px;
-  color: #AAA;
+  color: #aaa;
 }
 
 section.transaction .bitmap img {
@@ -304,7 +304,7 @@ section.transaction .bitmap img {
 
 section.transaction .thank-you {
   box-sizing: border-box;
-  border-bottom: 1px dashed #DEDEDE;
+  border-bottom: 1px dashed #dedede;
 }
 
 section.transaction .detail h2 {
@@ -312,7 +312,7 @@ section.transaction .detail h2 {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.75px;
-  color: #AAA;
+  color: #aaa;
 }
 
 section.transaction .detail p {
@@ -320,16 +320,16 @@ section.transaction .detail p {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.75px;
-  color: #14142B;
+  color: #14142b;
   white-space: nowrap;
 }
 
 section.transaction .total {
   width: 247px;
   height: 48px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   box-sizing: border-box;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
 section.transaction .total h3 {
@@ -462,15 +462,16 @@ footer nav.follow-us span:hover {
 
 @media screen and (max-width: 1200px) {
   section.ticket-result .tickets h3 {
-  font-size: 12px;
-}
+    font-size: 12px;
+  }
 
-section.ticket-result .tickets p {
-  font-size: 14px;
-}
+  section.ticket-result .tickets p {
+    font-size: 14px;
+  }
 
-section.ticket-result .tickets p.price {
-  font-size: 22px;
+  section.ticket-result .tickets p.price {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 991px) {
