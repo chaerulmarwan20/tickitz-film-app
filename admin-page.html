@@ -131,33 +131,38 @@
 
     <section class="description-premiere">
       <div class="container">
-        <div class="row">
-          <div class="col-8">
+        <div class="row justify-content-center justify-content-xl-start">
+          <div class="col-xl-8 col-lg-10">
             <h1>Movie Description</h1>
-            <div class="movie-description py-5 px-4 mt-4">
+            <div
+              class="movie-description d-flex justify-content-center pt-5 pb-5 pb-lg-4 px-4 mt-4"
+            >
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-lg-5">
                   <div
                     class="card image d-flex justify-content-center align-items-center"
                   >
                     <img
                       src="assets/img/spider-admin.png"
-                      alt="Image Description"
+                      alt="ImageDescription"
                       width="177"
                     />
                   </div>
-                  <div class="form-group director">
+                  <button class="btn btn-add d-lg-none mt-5">
+                    Add description
+                  </button>
+                  <div class="form-group director d-none d-lg-block">
                     <label for="director">Director</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control director"
                       name="director"
                       id="director"
                       placeholder="Jon Watts"
                     />
                   </div>
                 </div>
-                <div class="col-7 pl-0">
+                <div class="col-7 d-none d-lg-block pl-0">
                   <div class="form-group">
                     <label for="movie">Movie Name</label>
                     <input
@@ -221,7 +226,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-12 mt-2">
+                <div class="col-12 d-none d-lg-block mt-2">
                   <div class="form-group">
                     <label for="synopsis">Synopsis</label>
                     <textarea
@@ -235,52 +240,33 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div
+            class="col-xl-4 col-lg-10 mt-5 mt-xl-0 d-flex d-xl-block flex-column"
+          >
             <h1>Premiere Location</h1>
             <div class="location py-5 px-4 mt-4">
-              <select class="custom-select">
-                <option value="Purwokerto" selected>Purwokerto</option>
-                <option value="Jakarta">Jakarta</option>
-                <option value="Bandung">Bandung</option>
-                <option value="Surabaya">Surabaya</option>
-              </select>
               <div
-                class="image-cinemas mt-4 d-flex justify-content-between align-items-center mt-5"
+                class="d-flex justify-content-center justify-content-xl-start"
               >
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img src="assets/img/ebv.id 2.png" alt="Ebv" width="80" />
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img
-                      src="assets/img/hiflix 2.png"
-                      alt="Hiflix"
-                      width="80"
-                    />
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img
-                      src="assets/img/CineOne21 2.png"
-                      alt="CineOne"
-                      width="80"
-                    />
-                  </div>
-                </div>
+                <select class="custom-select">
+                  <option value="Purwokerto" selected>Purwokerto</option>
+                  <option value="Jakarta">Jakarta</option>
+                  <option value="Bandung">Bandung</option>
+                  <option value="Surabaya">Surabaya</option>
+                </select>
               </div>
               <div
-                class="image-cinemas mt-4 d-flex justify-content-between align-items-center"
+                class="image-cinemas d-flex justify-content-center justify-content-xl-between align-items-center mt-4"
               >
-                <div class="d-flex justify-content-center align-items-center">
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
                   <div>
                     <img src="assets/img/ebv.id 2.png" alt="Ebv" width="80" />
                   </div>
                 </div>
                 <div
-                  class="active d-flex justify-content-center align-items-center"
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
                 >
                   <div>
                     <img
@@ -290,7 +276,9 @@
                     />
                   </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
                   <div>
                     <img
                       src="assets/img/CineOne21 2.png"
@@ -301,14 +289,18 @@
                 </div>
               </div>
               <div
-                class="image-cinemas mt-4 d-flex justify-content-between align-items-center"
+                class="image-cinemas d-flex justify-content-center justify-content-xl-between align-items-center"
               >
-                <div class="d-flex justify-content-center align-items-center">
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
                   <div>
                     <img src="assets/img/ebv.id 2.png" alt="Ebv" width="80" />
                   </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
+                <div
+                  class="active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
                   <div>
                     <img
                       src="assets/img/hiflix 2.png"
@@ -317,7 +309,42 @@
                     />
                   </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
+                  <div>
+                    <img
+                      src="assets/img/CineOne21 2.png"
+                      alt="CineOne"
+                      width="80"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="image-cinemas d-none d-lg-flex justify-content-center justify-content-xl-between align-items-center"
+              >
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
+                  <div>
+                    <img src="assets/img/ebv.id 2.png" alt="Ebv" width="80" />
+                  </div>
+                </div>
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
+                  <div>
+                    <img
+                      src="assets/img/hiflix 2.png"
+                      alt="Hiflix"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="not-active d-flex justify-content-center align-items-center mr-4 mr-xl-0"
+                >
                   <div>
                     <img
                       src="assets/img/CineOne21 2.png"
@@ -328,19 +355,23 @@
                 </div>
               </div>
             </div>
-            <h1 class="mt-5 mb-3">Showtimes</h1>
+            <h1 class="mt-5 mt-xl-4">Showtimes</h1>
             <div class="showtimes py-5 px-4 mt-4">
-              <input
-                type="date"
-                class="form-control"
-                name="date"
-                id="date"
-                value="2021-07-21"
-              />
-              <div class="row mt-4">
-                <div class="col">
+              <div
+                class="d-flex justify-content-center justify-content-xl-start"
+              >
+                <input
+                  type="date"
+                  class="form-control"
+                  name="date"
+                  id="date"
+                  value="2021-07-21"
+                />
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12 mt-2 mt-xl-1">
                   <div
-                    class="d-flex justify-content-between align-items-center"
+                    class="d-flex justify-content-center justify-content-xl-between align-items-center"
                   >
                     <button
                       class="btn btn-plus d-flex justify-content-center align-items-center"
@@ -351,7 +382,9 @@
                     <span>10:30pm</span>
                     <span>12:00pm</span>
                   </div>
-                  <div class="d-flex mt-4">
+                  <div
+                    class="d-flex justify-content-center justify-content-xl-start mt-4"
+                  >
                     <span>04:30pm</span>
                     <span>07:00pm</span>
                     <span>08:30pm</span>
@@ -362,17 +395,17 @@
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-12">
+        <div class="row justify-content-center justify-content-xl-start mt-5">
+          <div class="col-lg-10 col-xl-12">
             <h1>Sales Charts</h1>
             <div class="based d-flex py-3 px-4 mt-4">
-              <a class="active mt-1" href="#">Based on Movie</a>
+              <a class="active mt-1" href="#">Based on Movies</a>
               <a class="mt-1 ml-5" href="#">Based on Location</a>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-4">
+        <div class="row justify-content-center justify-content-xl-start mt-5">
+          <div class="col-lg-5 col-xl-4">
             <div class="card chart p-4">
               <h2>Avengers: End Game</h2>
               <div class="link mt-1 d-flex justify-content-around">
@@ -408,7 +441,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0">
             <div class="card chart p-4">
               <h2>Avengers: End Game</h2>
               <div class="link mt-1 d-flex justify-content-around">
@@ -444,7 +477,115 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-5 col-xl-4 mt-4 mt-xl-0 d-none d-lg-block">
+            <div class="card chart p-4">
+              <h2>Avengers: End Game</h2>
+              <div class="link mt-1 d-flex justify-content-around">
+                <a class="active" href="#">Weekly</a>
+                <a href="#">Monthly</a>
+                <a href="#">Yearly</a>
+              </div>
+              <div class="row">
+                <div
+                  class="col-3 d-flex flex-column justify-content-around price"
+                >
+                  <span>$800</span>
+                  <span>$600</span>
+                  <span>$400</span>
+                  <span>$200</span>
+                  <span>$0</span>
+                </div>
+                <div class="col-9 lines">
+                  <img
+                    src="assets/img/Graph lines.png"
+                    alt="Chart"
+                    width="250"
+                  />
+                </div>
+                <div class="d-flex month">
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 mt-4 d-none d-lg-block">
+            <div class="card chart p-4">
+              <h2>Avengers: End Game</h2>
+              <div class="link mt-1 d-flex justify-content-around">
+                <a class="active" href="#">Weekly</a>
+                <a href="#">Monthly</a>
+                <a href="#">Yearly</a>
+              </div>
+              <div class="row">
+                <div
+                  class="col-3 d-flex flex-column justify-content-around price"
+                >
+                  <span>$800</span>
+                  <span>$600</span>
+                  <span>$400</span>
+                  <span>$200</span>
+                  <span>$0</span>
+                </div>
+                <div class="col-9 lines">
+                  <img
+                    src="assets/img/Graph lines.png"
+                    alt="Chart"
+                    width="250"
+                  />
+                </div>
+                <div class="d-flex month">
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 mt-4 d-none d-lg-block">
+            <div class="card chart p-4">
+              <h2>Avengers: End Game</h2>
+              <div class="link mt-1 d-flex justify-content-around">
+                <a class="active" href="#">Weekly</a>
+                <a href="#">Monthly</a>
+                <a href="#">Yearly</a>
+              </div>
+              <div class="row">
+                <div
+                  class="col-3 d-flex flex-column justify-content-around price"
+                >
+                  <span>$800</span>
+                  <span>$600</span>
+                  <span>$400</span>
+                  <span>$200</span>
+                  <span>$0</span>
+                </div>
+                <div class="col-9 lines">
+                  <img
+                    src="assets/img/Graph lines.png"
+                    alt="Chart"
+                    width="250"
+                  />
+                </div>
+                <div class="d-flex month">
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 mt-4 d-none d-lg-block">
             <div class="card chart p-4">
               <h2>Avengers: End Game</h2>
               <div class="link mt-1 d-flex justify-content-around">
@@ -481,124 +622,16 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-4">
-            <div class="card chart p-4">
-              <h2>Avengers: End Game</h2>
-              <div class="link mt-1 d-flex justify-content-around">
-                <a class="active" href="#">Weekly</a>
-                <a href="#">Monthly</a>
-                <a href="#">Yearly</a>
-              </div>
-              <div class="row">
-                <div
-                  class="col-3 d-flex flex-column justify-content-around price"
-                >
-                  <span>$800</span>
-                  <span>$600</span>
-                  <span>$400</span>
-                  <span>$200</span>
-                  <span>$0</span>
-                </div>
-                <div class="col-9 lines">
-                  <img
-                    src="assets/img/Graph lines.png"
-                    alt="Chart"
-                    width="250"
-                  />
-                </div>
-                <div class="d-flex month">
-                  <span>Jan</span>
-                  <span>Feb</span>
-                  <span>Mar</span>
-                  <span>Apr</span>
-                  <span>May</span>
-                  <span>Jun</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card chart p-4">
-              <h2>Avengers: End Game</h2>
-              <div class="link mt-1 d-flex justify-content-around">
-                <a class="active" href="#">Weekly</a>
-                <a href="#">Monthly</a>
-                <a href="#">Yearly</a>
-              </div>
-              <div class="row">
-                <div
-                  class="col-3 d-flex flex-column justify-content-around price"
-                >
-                  <span>$800</span>
-                  <span>$600</span>
-                  <span>$400</span>
-                  <span>$200</span>
-                  <span>$0</span>
-                </div>
-                <div class="col-9 lines">
-                  <img
-                    src="assets/img/Graph lines.png"
-                    alt="Chart"
-                    width="250"
-                  />
-                </div>
-                <div class="d-flex month">
-                  <span>Jan</span>
-                  <span>Feb</span>
-                  <span>Mar</span>
-                  <span>Apr</span>
-                  <span>May</span>
-                  <span>Jun</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card chart p-4">
-              <h2>Avengers: End Game</h2>
-              <div class="link mt-1 d-flex justify-content-around">
-                <a class="active" href="#">Weekly</a>
-                <a href="#">Monthly</a>
-                <a href="#">Yearly</a>
-              </div>
-              <div class="row">
-                <div
-                  class="col-3 d-flex flex-column justify-content-around price"
-                >
-                  <span>$800</span>
-                  <span>$600</span>
-                  <span>$400</span>
-                  <span>$200</span>
-                  <span>$0</span>
-                </div>
-                <div class="col-9 lines">
-                  <img
-                    src="assets/img/Graph lines.png"
-                    alt="Chart"
-                    width="250"
-                  />
-                </div>
-                <div class="d-flex month">
-                  <span>Jan</span>
-                  <span>Feb</span>
-                  <span>Mar</span>
-                  <span>Apr</span>
-                  <span>May</span>
-                  <span>Jun</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row view-more">
-          <div class="col-5">
+        <div
+          class="row justify-content-center justify-content-xl-start view-more"
+        >
+          <div class="col-4 col-lg-4 col-xl-5">
             <hr />
           </div>
-          <div class="col-2 d-flex justify-content-center">
+          <div class="col-4 col-lg-2 d-flex justify-content-center">
             <a href="#">view more</a>
           </div>
-          <div class="col-5">
+          <div class="col-4 col-lg-4 col-xl-5">
             <hr />
           </div>
         </div>
